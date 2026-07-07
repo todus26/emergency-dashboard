@@ -211,3 +211,9 @@ http://VM_공인IP:3000
 
 - 국립중앙의료원 응급의료정보 Open API: https://www.data.go.kr/data/15000563/openapi.do
 - 건강보험심사평가원 병·의원 찾기 Open API: https://www.data.go.kr/data/15000736/openapi.do
+
+- ---
+
+## 실행 화면 
+<img width="400" height="219" alt="녹음 2026-07-07 224308" src="https://github.com/user-attachments/assets/b74a9112-2b9f-44fd-9199-a0fc8982e75c" />
+
