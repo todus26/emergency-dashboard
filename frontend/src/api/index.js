@@ -1,4 +1,4 @@
-const BASE_URL = "http://131.186.18.12";
+const BASE_URL = "";
 
 export const fetchRegionData = () =>
   fetch(`${BASE_URL}/api/region`).then(res => res.json());

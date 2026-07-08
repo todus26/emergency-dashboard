@@ -74,4 +74,4 @@ def table():
     return jsonify([{"병원명": r[0], "지역": r[1], "가용병상수": r[2], "수집시간": str(r[3])} for r in rows])
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+    app.run(host="0.0.0.0", port=5000)
