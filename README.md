@@ -215,5 +215,5 @@ http://VM_공인IP:3000
 - ---
 
 ## 실행 화면 
-<img width="400" height="172" alt="녹음 2026-07-08 140321" src="https://github.com/user-attachments/assets/1a45c127-2b04-471a-a419-9c69518b8ed2" />
+<img width="800" height="374" alt="녹음 2026-07-08 140321" src="https://github.com/user-attachments/assets/1a45c127-2b04-471a-a419-9c69518b8ed2" />
 
