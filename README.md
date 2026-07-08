@@ -3,7 +3,7 @@
 > OCI 기반 Cloud 데이터 파이프라인 구축 — 기말 프로젝트  
 > 충북대학교 소프트웨어학부 · 2026
 
-**서비스 주소:** http://131.186.18.12:3000
+**서비스 주소:** http://131.186.18.12
 
 ---
 
@@ -23,7 +23,7 @@
 ## 아키텍처 설명
 
 ### 전체 파이프라인
-<img width="317" height="286" alt="image" src="https://github.com/user-attachments/assets/f65b26bd-7454-4df5-be44-7fe0d392602d" />
+<img width="482" height="407" alt="image" src="https://github.com/user-attachments/assets/bce8b7c2-b6bc-4bbc-bdfc-72e04e0c0ce9" />
 
 
 
@@ -35,7 +35,7 @@
 | Block Volume | BV-14 (50GB) | 수집 원본 CSV 저장 |
 | Object Storage | bucket-14-cbnu-lv2 | 전처리 완료 CSV 백업 |
 | Oracle DB XE | xepdb1 | 정형 데이터 적재 및 API 서빙 |
-| VCN / 보안목록 | - | 포트 80, 3000 외부 오픈 |
+| VCN / 보안목록 | - | 포트 80 외부 오픈 |
 
 ---
 
@@ -159,7 +159,6 @@ sudo bash -c 'export ORACLE_HOME=/opt/oracle/product/21c/dbhomeXE; export LD_LIB
 
 ```bash
 sudo firewall-cmd --permanent --add-port=80/tcp
-sudo firewall-cmd --permanent --add-port=3000/tcp
 sudo firewall-cmd --reload
 ```
 
@@ -181,14 +180,15 @@ LD_LIBRARY_PATH=/opt/oracle/product/21c/dbhomeXE/lib
 
 ```bash
 cd /home/opc/emergency-dashboard/frontend
-npm install
-npm start
+npm run build
+sudo cp -r build/* /usr/share/nginx/html/
+sudo systemctl restart nginx
 ```
 
 ### 10. 접속
 
 ```
-http://VM_공인IP:3000
+http://VM_공인IP
 ```
 
 ---
