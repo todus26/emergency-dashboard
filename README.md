@@ -23,7 +23,7 @@
 ## 아키텍처 설명
 
 ### 전체 파이프라인
-<img width="515" height="430" alt="image" src="https://github.com/user-attachments/assets/02b26708-0cb7-47e0-9a08-5b8316c17c27" />
+<img width="317" height="286" alt="image" src="https://github.com/user-attachments/assets/f65b26bd-7454-4df5-be44-7fe0d392602d" />
 
 
 
@@ -215,5 +215,5 @@ http://VM_공인IP:3000
 - ---
 
 ## 실행 화면 
-<img width="800" height="480" alt="녹음 2026-07-07 224510" src="https://github.com/user-attachments/assets/cce3da5f-2e8a-40bf-bedf-76a288b599a1" />
+<img width="800" height="374" alt="녹음 2026-07-08 140321" src="https://github.com/user-attachments/assets/1a45c127-2b04-471a-a419-9c69518b8ed2" />
 
