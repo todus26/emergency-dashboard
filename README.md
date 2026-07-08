@@ -23,7 +23,7 @@
 ## 아키텍처 설명
 
 ### 전체 파이프라인
-<img width="515" height="430" alt="image" src="https://github.com/user-attachments/assets/02b26708-0cb7-47e0-9a08-5b8316c17c27" />
+<img width="317" height="286" alt="image" src="https://github.com/user-attachments/assets/f65b26bd-7454-4df5-be44-7fe0d392602d" />
 
 
 
