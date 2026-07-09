@@ -1,8 +1,8 @@
 import pandas as pd
 import cx_Oracle
+import subprocess
 from datetime import datetime
 
-# 전처리
 df = pd.read_csv("/mnt/iscsi/emergency-data/emergency_raw.csv")
 
 df = df.dropna(subset=["hvec"])
@@ -45,3 +45,17 @@ conn.commit()
 cursor.close()
 conn.close()
 print("Oracle DB 적재 완료")
+
+# Object Storage 업로드
+result = subprocess.run([
+    "oci", "os", "object", "put",
+    "--bucket-name", "bucket-14-cbnu-lv2",
+    "--file", "/mnt/iscsi/emergency-data/emergency_clean.csv",
+    "--name", "emergency_clean.csv",
+    "--force"
+], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+if result.returncode == 0:
+    print("Object Storage 업로드 완료")
+else:
+    print(f"Object Storage 업로드 실패: {result.stderr.decode()}")
